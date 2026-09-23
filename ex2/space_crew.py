@@ -52,7 +52,7 @@ class SpaceMission(BaseModel):
             if experienced / len(self.crew) < 0.5:
                 raise ValueError(
                     "Long missions (> 365 days) need 50% experienced "
-                    "rew (5+ years)"
+                    "crew (5+ years)"
                 )
 
         if not all(member.is_active for member in self.crew):
